@@ -1,0 +1,55 @@
+.header {
+    width: 100%;
+    background-color: blue;
+    text-align: right;
+}
+
+.h3 {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar{
+    width: 100%;
+    text-align: center;
+}
+
+.icon-navbar {
+    width: 30px;
+}
+
+.logo-navbar {
+    width: 60px;
+}
+
+.practice-dropdown {
+    color: blue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border: none
+}
+
+.learn-dropdown {
+    color: blue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border: none; 
+}
+
+.explore-dropdown {
+    color: blue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border: none; 
+}
+
+.connect-dropdown {
+    color: blue;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    border: none; 
+}

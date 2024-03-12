@@ -141,13 +141,13 @@ html, body {
 
 p,ol {
     text-align: left;
-    padding-left: 160px;
+    padding-left: 140px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     }
 
 h4 {
-    padding-left: 160px;
+    padding-left: 140px;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -290,4 +290,58 @@ li {
     margin-right:80px;
     text-decoration:none;
 }
-  
+
+.slideshow-titles {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: gray;
+}
+
+/*advertisement*/
+
+.blankspace {
+    width: 300px;
+    height: 220px;
+    background-color: white;
+}
+
+.advertisement {
+    width: 275px;
+    height: 350px;
+    background-color: navy;
+    margin: 20px;
+}
+
+.remove-ads {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.premium-membership {
+    color: white;
+    font-family: cursive;
+    font-size: 30px;
+    text-align: center;
+}
+
+.ads-text {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.ad-button {
+    background-color: white;
+    color: navy;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 80px;
+}

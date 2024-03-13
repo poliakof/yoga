@@ -421,6 +421,7 @@ li {
     margin:0 auto;
     position:relative;
     font-family:verdana, arial, sans-serif;
+    z-index: -999;
 } 
 
 #articleswrapper #articleswrap {

@@ -13,6 +13,9 @@ html, body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     padding: 0%;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
 }
 
 .h3 {
@@ -27,17 +30,21 @@ html, body {
 .navbar{
     width: 100%;
     text-align: center;
+    position: fixed;
+    background-color: white;
+    height: 70px;
+    top: 25px;
+    line-height: 1;
 }
 
 .icon-navbar {
-    padding-top: 10px;
     width: 30px;
 }
 
 .logo-navbar {
     width: 60px;
     padding-right: 10px;
-    padding-top: 10px;
+    padding-top: 15px;
 }
 
 .logo-navbar:hover{
@@ -102,18 +109,19 @@ html, body {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    padding-top: 90px;
 }
 .image-title {
-    background-color: grey;
+    background-color: gray;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -50px;
     width: 80%;
     height: 90px;
     color: white;
-    padding: none;
     text-align: center;
     line-height: 6rem;
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
 }
 .image-description {
@@ -122,6 +130,7 @@ html, body {
     margin-right: auto;
     width: 80%;
     height: 50px;
+    margin-top: -20px;
     color: white;
     text-align: center;
     font-family: Helvetica;
@@ -344,4 +353,510 @@ li {
     font-size: 20px;
     text-align: center;
     margin-left: 80px;
+}
+
+/*yoga practices slideshow*/
+
+/*titles*/
+
+.slideshow2 {
+    width: 100%;
+    height: 200px;
+    padding-top: 2900px;
+}
+
+.explore-more {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 640px;
+    color: gray;
+}
+
+.article-slideshow {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex; 
+    justify-content: center; 
+    color: lightslategray;
+} 
+
+.span2::before { 
+    content: "ADVICE"; 
+    animation: animate infinite ease-in-out 15s; 
+    padding-left: 10px;
+}
+
+@keyframes animate { 
+
+    0% { 
+        content: "ADVICE"; 
+    } 
+
+    20% { 
+        content: "ARTICLES"; 
+    } 
+
+    40% { 
+        content: "PRACTICES"; 
+    } 
+
+    60% { 
+        content: "BASICS"; 
+    }
+
+    80% { 
+        content: "TECHNIQUES"; 
+    } 
+
+    100% { 
+        content: "TIPS";
+    } 
+}
+
+/*images*/
+
+#articleswrapper {
+    width:640px;
+    height:450px;
+    margin:0 auto;
+    position:relative;
+    font-family:verdana, arial, sans-serif;
+} 
+
+#articleswrapper #articleswrap {
+    position:absolute;
+    left:0;
+    top:0;
+    height:450px;
+    width:640px;
+    overflow:hidden;
+    text-align:center;
+    padding-left: 160px;
+} 
+
+#articleswrapper #articleswrap div {
+    width:320px; height:900px; 
+    padding-top:10px; 
+    position:relative;
+} 
+
+#articleswrapper #articleswrap div img {
+    clear:both; 
+    display:block; 
+    margin:0 auto; 
+    border:0;
+} 
+
+#articleswrapper #articleswrap div h3 {
+    padding:10px 0 0 0; 
+    margin:0; 
+    font-size:12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+} 
+
+#articleswrapper #articleswrap div p {
+    padding:5px 0; 
+    margin:0; 
+    font-size:12px; 
+    line-height:18px;
+} 
+
+#articleswrap .previous{ 
+    display:inline;
+    float:left;
+    margin-left:80px;
+    text-decoration:none;
+} 
+
+#articleswrap .next{ 
+    display:inline;
+    float:right;
+    margin-right:80px;
+    text-decoration:none;
+}
+
+.articles-slideshow-titles {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: gray;
+}
+
+/*buttons*/
+
+.scroll {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    background-color: white;
+    color: navy;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100000;
+    right: 25px;
+}
+
+/*bottom of the page, also testing how to use a grid*/
+
+/*grid setup*/
+
+.comments-title{
+    grid-area: header;
+    color: navy;
+}
+
+.comments {
+    grid-area: body;
+    width: 60%;
+}
+
+.sidebar {
+    grid-area: side;
+}
+
+.footer {
+    grid-area: footer;
+    height: 1500px;
+    margin-top: 50px;
+    background-image:url(https://www.creativefabrica.com/wp-content/uploads/2021/11/12/Blue-Mandala-Background-Graphics-20061429-1.jpg);
+}
+
+.bottom-of-page{
+    display: grid;
+    grid-template-areas:
+    "header header header side"
+    "body    body     .   side"
+    "body    body     .   side"
+    "footer footer footer footer";
+}
+
+/*items at the bottom of the page*/
+
+.responses {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding-left: 100px;
+}
+
+.pfp {
+    width: 60px;
+    height: 60px;
+    padding-left: 150px;
+    padding-top: 50px;
+}
+
+.name {
+    display: inline;
+    padding-left:10px;
+    font-size: 25px;
+    color: navy;
+}
+
+.date {
+    display: inline;
+    padding-left:5px;
+    font-size: 15px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.comment-content {
+    padding-left:200px;
+    margin-right: -200px;
+    font-size: 20px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    ;
+} 
+
+.reply {
+    padding-left:200px;
+    font-size: 15px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    ;
+} 
+
+/*comments submission form*/
+
+.form {
+    padding-left:100px;
+    font-size: 15px;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    ;
+} 
+
+.form-text-area-large {
+    margin-left: 100px;
+    width: 850px;
+    height: 200px;
+}
+
+.form-text-area-small {
+    margin-left: 100px;
+    width: 850px;
+    height: 50px;
+}
+
+.form-checkbox {
+    margin-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+}
+
+.post-comment {
+    background-color: navy;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+/*author biography*/
+
+.author-image {
+    padding-right: 180px;
+}
+
+.about-the-author {
+    font-size: 15px;
+    background-color: darkgray;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 230px;
+    height: 20px;
+    text-align: center;
+}
+
+.timothy-burgin {
+    font-size: 18px;
+    background-color: gray;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 230px;
+    height: 28px;
+    text-align: center;
+}
+
+.author-biography {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 0px;
+    padding-right: 220px;
+    justify-content: center;
+    text-align: center;
+}
+
+/*newsletter section*/
+
+.newsletter {
+    width: 100%;
+    height: 650px;
+    background-color: navy;
+    color: white;
+}
+
+.woman-cartoon-yoga {
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 550px;
+}
+
+.newsletter-text-1 {
+   font-family: Arial, Helvetica, sans-serif;
+   margin-left: 430px;
+   font-size: 20px;
+   color: white;
+   font-weight: 100;
+}
+
+.newsletter-text-2 {
+    font-family: cursive;
+    margin-left: 280px;
+    font-size: 40px;
+    color: white;
+}
+
+.email-form {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 480px;
+    width: 220px;
+    height: 75px;
+    font-size: 20px;
+    color: white;
+}
+
+.subscribe-btn {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -2px;
+    width: 220px;
+    height: 83px;
+    font-size: 20px;
+    background-color: maroon;
+    color: white;
+}
+
+.newsletter-text-3 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 280px;
+    margin-right: 430px;
+    font-weight: 100;
+    font-size: 15px;
+    color: white;
+ }
+
+/*memberships section*/
+
+.memberships-section {
+    display: flexbox;
+    width: 100%;
+    height: 300px;
+}
+
+.members-text-1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-top: 100px;
+    margin-left: 150px;
+    font-weight: 100;
+}
+
+.members-text-2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 0px;
+    margin-left: 220px;
+    text-decoration: underline;
+}
+
+.members-text-3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-right: 960px;
+    font-weight: 100;
+    text-align: center;
+}
+
+.sign-up {
+    background-color: maroon;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 130px;
+    height: 50px;
+    font-size: 17px;
+    display: block;
+    margin-top: 25px;
+    margin-left: 250px;
+}
+
+/*books section*/
+
+.books-section {
+    float: right;
+    width: 50%;
+}
+
+.books-text-1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: -290px;
+    margin-left: 200px;
+
+}
+
+.books-text-2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+    padding-top: 20px;
+    margin-left: 240px;
+}
+
+.books-text-3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    padding-top: 5px;
+    margin-right: 200px;
+    text-align: center;
+}
+
+.book-cover-1 {
+    width: 150px;
+    margin-left: 180px;
+    padding-top: 20px;
+}
+
+.book-cover-1:hover{
+    transform: scale(1.1);
+}
+
+.book-cover-2:hover{
+    transform: scale(1.1);
+}
+
+.book-cover-2 {
+    width: 150px;
+}
+
+/*footer-navbar*/
+
+.footer-navbar {
+    width: 100%;
+    background-color: navy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-footer {
+    padding-top: 10px;
+    width: 30px;
+}
+
+.icon-footer:hover{
+    transform: scale(1.3);
+}
+
+.about-us-footer, .contact-us-footer, .terms-footer, .privacy-footer, .login-footer {
+ background-color: navy;
+ color: white;
+ font-size: 20px;
+ font-family: Arial, Helvetica, sans-serif;   
+ text-decoration: none;
+ border: 2px;
+ padding: 10px;
+}
+
+.about-us-footer:hover, .contact-us-footer:hover, .terms-footer:hover, .privacy-footer:hover, .login-footer:hover {
+    text-decoration: underline;
+}
+
+/*contact-information-buttons*/
+
+.instagram-icon-2, .facebook-icon-2, .x-icon-2, .pinterest-icon-2, .tumblr-icon-2 {
+    width: 40px;
+    border-radius: 30px;
+}
+
+.copyright-tag {
+    color: white;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
